@@ -560,6 +560,10 @@ table{
 	position: relative;
 	background: #354051
 }
+.creator h4{
+	display: inline-block;
+	margin-top: 45px; 
+}
 
 
 
