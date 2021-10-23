@@ -1,0 +1,574 @@
+body{
+	font-family: Arial, sans-serif;
+	
+}
+
+nav{
+	width: 100%;
+	height: 60px;
+	background: #344051;
+}
+.logo{
+	color: #fff;
+	font-size: 28px;
+	line-height: 60px;
+	padding-left: 388px;
+	float: left;
+	position: relative;
+}
+.menu{
+	float: left;
+	padding-left: 432px;
+	position: relative;
+
+}
+.menu li{
+	float: left;
+	line-height: 60px;
+	color: #fff;
+	margin-right: 40px;
+	font-size: 16px;
+	text-transform: uppercase;
+
+}
+.main {
+	width: 100%;
+	height: 1015px;
+	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
+	position: relative;
+}
+.title_container{
+
+	float: left;
+	margin: 432px 0px 0px 404px;
+	color: #2c384a;
+	text-align: center;
+}
+.title_container h1 {
+
+	font-size: 60px;
+	font-weight: bold;
+
+}
+.title_container h4 {
+	margin-top:40px;
+	font-size: 20px;
+	color: #79818d;
+	
+}
+.title_container input {
+	margin:58px 14px 0px 14px;
+	height: 40px;
+	text-align: center;
+	color: #6d7682;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 0px 16px; 
+} 
+
+.info {
+	width: 100%;
+	height: 732px;
+	text-align: center;
+	background: url(../img/bg_info.jpg) center/cover no-repeat;
+	position: relative;
+}
+.title_info{
+
+	float: center;
+	margin: 0px 0px 0px 0px;
+	color: #2c384a;
+	text-align: center;
+}
+
+
+.title_info h2 {
+	margin-top: 108px; 
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	color: #263244;
+}
+
+.title_info img{
+	margin: 100px 0px 0px 0px;	
+
+}
+.title_info>p {
+	padding: 28px 0px 0px 0px;
+	text-align: center;
+	color: #3f495a;
+	font-size: 16px;
+	
+}
+.title_info input {
+	text-align: center;
+	height: 40px;
+	margin-top: 36px;
+	color: #6d7682;
+	border: 2px solid #6d7682;
+	background: none;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0px 16px 0px 32px; 
+	background: url(../img/dowload.png) 8px/auto 50% no-repeat;
+} 
+
+.info_job {
+	width: 100%;
+	height: 520px;
+	text-align: center;
+	background: url(../img/info_job_bg.jpg) center/cover no-repeat;
+	position: relative;
+}
+.title_job h2{
+
+	margin-top: 108px; 
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	color: #263244;
+
+}
+.title_job h3{
+
+	margin: 35px 0px 16px 0px; 
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #cf7600;
+
+
+}
+.title_job p{
+
+	text-align: center;
+	color: #3f495a;
+	font-size: 16px;
+	
+
+}
+.diz{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+
+	
+
+}
+.razr{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+	
+
+}
+.optim{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+	
+
+}
+.market{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+	
+}
+.case {
+	width: 100%;
+	height: 1215px;
+	position: relative;
+}
+.title_case{
+	text-align: center;
+	color: #2c384a;
+	
+}
+.title_case h2{
+	margin-top: 108px; 
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	color: #263244;
+
+}
+.title_case>span {
+	display: inline-block;
+	margin: 72px 0px 0px 0px;
+	text-align: center;
+	color: #3f495a;
+	font-size: 16px;
+}
+.title_case img{
+	display: inline-block;
+	margin: 100px 0px 0px 0px;
+}
+
+.case_comp{
+	display: inline-block;
+	text-align: left;
+	margin: 100px 84px;
+	color: #2c384a;
+
+}
+.case_otz{
+	display: inline-block;
+	text-align: left;
+	margin: 0px 0px;
+	color: #2c384a;
+		
+}
+.title_case h3{
+	
+	font-size: 24px;
+	font-weight: bold;
+	color: #384354;
+}
+.title_case p {
+	color: #3f495a;
+	font-size: 16px;
+	
+}
+
+.price {
+	width: 100%;
+	height: 788px;
+	position: relative;
+	
+}
+.title_price{
+
+	color: #2c384a;
+	text-align: center;
+}
+table{
+	
+	margin: auto;
+	padding: 25px;
+}
+
+.title_price h2{
+	font-size: 48px;
+	font-weight: bold;
+	color: #1c2534;
+}
+
+
+.title_price h3{
+	text-align: left;
+	font-size: 36px;
+	font-weight: bold;
+	color: #1c2534;
+}
+.title_price p{
+	text-align: left;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #737373;
+}
+.title_price h5{
+	text-align: left;
+	font-size: 24px;
+	font-weight: bold;
+	color: #1c2534;
+}
+.title_price h4{
+	text-align: right;
+	font-size: 36px;
+	font-weight: bold;
+	color: #1c2534;
+}
+.title_price select{
+	
+	text-align: left;
+	color: #2c2c2c;
+	background: none;
+	font-size: 36px;
+}
+.statistics {
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	background: url(../img/bg_statist.jpg) center 100%/auto  no-repeat;
+	position: relative;
+}
+.title_statistics h2{
+
+	margin-top: 108px; 
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	color: #263244;
+
+}
+.title_statistics h3{
+
+	margin: 35px 0px 35px 0px; 
+	text-align: center;
+	font-size: 36px;
+	font-weight: 900;
+	color: #323e4f;
+
+
+}
+
+.title_statistics h4{
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+	color: #323e4f;
+}
+
+
+.stat1{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+
+	
+
+}
+.stat2{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+	
+
+}
+.stat3{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+	
+
+}
+.stat4{
+	display: inline-block;
+	margin: 100px 84px;
+	color: #2c384a;
+}
+
+.feedback {
+	width: 100%;
+	height: 589px;
+	text-align: center;
+	position: relative;
+}
+.title_feedback{
+	margin-top: 140px;
+}
+.title_feedback h2{
+
+	margin-top: 108px; 
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	color: #263244;
+}
+.title_feedback img{
+
+	text-align: center;
+	margin-top: 50px;
+	
+}
+
+.title_feedback p{
+
+	text-align: center;
+	margin-top: 30px;
+	font-size: 16px;
+	color: #3d4654;
+}
+
+.title_feedback input {
+	margin:0px 10px 0px 10px;
+	height: 40px;
+	text-align: center;
+	color: #cfd2d7;
+	border: 2px solid #cfd2d7;
+	background: none;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 0px 16px; 
+} 
+
+.contacts {
+	width: 100%;
+	height: 808px;
+	background: url(../img/bg_contacts.jpg) center 100%/auto  no-repeat;
+	position: relative;
+}
+.title_contacts{
+
+	float: center;
+	margin: 10px 0px 0px 0px;
+	color: #fff;
+	text-align: center;
+}
+.title_contacts h2{
+
+	
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+
+}
+.title_contacts h3{
+
+	margin: 21px 0px; 
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+
+
+}
+
+.title_contacts p{
+ 	margin: 0px auto;
+	text-align: center;
+	margin-top: 24px;
+
+}
+
+.adress{
+	display: inline-block;
+	margin: 30px 30px;
+
+	
+
+	
+
+}
+.E-mail{
+	display: inline-block;
+	margin: 30px 30px;
+	margin: 0px auto
+	
+
+}
+.tel{
+	display: inline-block;
+	margin: 30px 30px;
+	
+}
+.title_contacts input {
+
+	margin:0px 14px 0px 14px;
+	height: 40px;
+	text-align: left;
+	color: #676769;
+	border: 2px solid #676769;
+	background: #fff;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px 5px;
+
+}
+.title_contacts textarea {
+
+	margin:23px 25px 25px 25px;
+	text-align: left;
+	color: #676769;
+	border: 2px solid #676769;
+	background: #fff;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px 5px;
+
+}
+
+.title_contacts input.submit {
+	margin:23px 25px 25px 25px;
+	height: 40px;
+	text-align: center;
+	color: #fff;
+	border: 2px solid #fff;
+	background: none;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px 20px;
+
+}
+.facebook{
+	display: inline-block;
+	margin: 102px 25px;
+	text-align: center;
+
+	
+
+}
+.Twitter{
+	display: inline-block;
+	margin: 102px 25px;
+	text-align: center;
+	
+
+}
+.dribbble{
+	display: inline-block;
+	margin: 102px 25px;
+	text-align: center;
+	
+
+}
+.github{
+	display: inline-block;
+	margin: 102px 25px;
+	text-align: center;
+}
+.instagram{
+	display: inline-block;
+	margin: 102px 25px;
+	text-align: center;
+
+
+}
+.linkedin{
+	display: inline-block;
+	margin: 102px 25px;
+	text-align: center;
+	
+}
+.cart {
+	width: 100%;
+	height: 335px;
+	position: relative;
+}
+.title_cart{
+
+	float: center;
+	margin: 10px 0px 0px 0px;
+	color: #fff;
+	text-align: center;
+}
+.creator{
+	color: #fff;
+	text-align: center;
+	font-size: 13px;
+	height: 95px;
+	float: center;
+	position: relative;
+	background: #354051
+}
+
+
+
+
+
+
+
+
+
+
+
+
