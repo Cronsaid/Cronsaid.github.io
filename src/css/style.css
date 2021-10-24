@@ -89,7 +89,7 @@ nav{
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
-	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	background: url(../img/cherta.png)  50% 45px/9% no-repeat local;;
 	color: #263244;
 }
 
@@ -126,11 +126,11 @@ nav{
 }
 .title_job h2{
 
-	margin-top: 108px; 
+	margin-top: 100px; 
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
-	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	background: url(../img/cherta.png)  50% 45px/12% no-repeat local;
 	color: #263244;
 
 }
@@ -154,7 +154,7 @@ nav{
 }
 .diz{
 	display: inline-block;
-	margin: 100px 84px;
+	margin: 120px 84px;
 	color: #2c384a;
 
 	
@@ -195,7 +195,7 @@ nav{
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
-	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	background: url(../img/cherta.png)  50% 45px/7% no-repeat local;
 	color: #263244;
 
 }
@@ -305,7 +305,7 @@ table{
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
-	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	background: url(../img/cherta.png)  50% 45px/19% no-repeat local;;
 	color: #263244;
 
 }
@@ -371,7 +371,7 @@ table{
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
-	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	background: url(../img/cherta.png)  50% 45px/7% no-repeat local;;
 	color: #263244;
 }
 .title_feedback img{
@@ -420,7 +420,7 @@ table{
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
-	background: url(../img/cherta.png) center 100%/auto 15% no-repeat;
+	background: url(../img/cherta.png)  50% 45px/10% no-repeat local;;
 
 }
 .title_contacts h3{
@@ -545,20 +545,22 @@ table{
 	position: relative;
 }
 .title_cart{
-
+	width: 100%;
 	float: center;
 	margin: 10px 0px 0px 0px;
 	color: #fff;
 	text-align: center;
+
 }
 .creator{
+	width: 100%;
 	color: #fff;
 	text-align: center;
 	font-size: 13px;
 	height: 95px;
 	float: center;
 	position: relative;
-	background: #354051
+	background: #354051 local no-repeat;
 }
 .creator h4{
 	display: inline-block;
