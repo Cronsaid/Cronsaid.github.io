@@ -1,27 +1,75 @@
+
 body{
 	font-family: Arial, sans-serif;
-	
+
+}
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #e0e0e0;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 1s infinite linear;
+}
+
+@keyframes preloader-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loaded_hiding .preloader {
+  transition: 7s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
 
 nav{
 	width: 100%;
 	height: 60px;
 	background: #344051;
+	position: fixed;
+
 }
+
 .logo{
 	color: #fff;
 	font-size: 28px;
 	line-height: 60px;
 	padding-left: 388px;
 	float: left;
-	position: relative;
-}
-.menu{
-	float: left;
-	padding-left: 432px;
-	position: relative;
+	-webkit-animation: comming 1s ease;
+	-o-animation: comming 1s ease;
+	animation: comming 1s ease;
+
 
 }
+
+.menu{
+	height: 60px;
+	float: left;
+	padding-left: 432px;
+
+
+}
+
 .menu li{
 	float: left;
 	line-height: 60px;
@@ -29,34 +77,117 @@ nav{
 	margin-right: 40px;
 	font-size: 16px;
 	text-transform: uppercase;
+	-webkit-animation: topshift 1s ease forwards;
+	-o-animation: topshift 1s ease forwards;
+	animation: topshift 1s ease forwards;
+	opacity: 0;
 
 }
+.menu li a{
+	transition: all 0.2s;
+	color: white;
+	transform: scale(1);
+	display: inline-block;
+
+}
+
+.menu li a:visited{
+	color: white;
+
+}
+
+.menu li a:hover{
+	color: #e88604;
+
+
+}
+.menu li a:active{
+	transform: scale(1.1);
+
+}
+
+@keyframes comming{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes topshift{
+	from{
+		opacity: 0;
+		margin-top: -80px;
+	}
+	to{
+		opacity: 1;
+		margin-top: 0px;
+	}
+}
+
+.menu li:nth-child(2){
+	animation-delay: 0.4s;
+}
+.menu li:nth-child(3){
+	animation-delay: 0.8s;
+}
+.menu li:nth-child(4){
+	animation-delay: 1.2s;
+}
+.menu li:nth-child(5){
+	animation-delay: 1.6s;
+}
+.menu li:nth-child(6){
+	animation-delay: 2s;
+}
+
 .main {
 	width: 100%;
 	height: 1015px;
 	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
-	position: relative;
-}
-.title_container{
 
+}
+
+.title__container{
 	float: left;
 	margin: 432px 0px 0px 404px;
 	color: #2c384a;
 	text-align: center;
+	opacity: 0;
+	-webkit-animation: slide 1s ease forwards;
+	-o-animation: slide 1s ease forwards;
+	animation: slide 1s ease forwards;
+	-webkit-animation-delay: 2.4s;
+	-o-animation-delay: 2.4s;
+	animation-delay: 2.4s;
+	
 }
-.title_container h1 {
 
+@keyframes slide{
+	from{
+		opacity: 0;
+		margin-left: -500px;
+	}
+	to{
+		opacity: 1;
+		margin-left: 404px;
+	}
+}
+
+.title__container h1 {
 	font-size: 60px;
 	font-weight: bold;
 
 }
-.title_container h4 {
+.title__container h4 {
 	margin-top:40px;
 	font-size: 20px;
 	color: #79818d;
-	
+
 }
-.title_container input {
+
+.title__container input {
 	margin:58px 14px 0px 14px;
 	height: 40px;
 	text-align: center;
@@ -65,45 +196,65 @@ nav{
 	background: none;
 	border-radius: 5px;
 	font-size: 18px;
-	padding: 0px 16px; 
-} 
+	padding: 0px 16px;
+
+}
+
+.title__container input {
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+.title__container input:hover {
+	background: #344051;
+	color: white;
+
+}
+.title__container input:active {
+	transform: scale(1.1);
+
+}
 
 .info {
 	width: 100%;
 	height: 732px;
 	text-align: center;
 	background: url(../img/bg_info.jpg) center/cover no-repeat;
-	position: relative;
+
+
 }
 .title_info{
-
 	float: center;
-	margin: 0px 0px 0px 0px;
 	color: #2c384a;
 	text-align: center;
+
 }
+
 
 
 .title_info h2 {
-	margin-top: 108px; 
+	margin-top: 108px;
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
 	background: url(../img/cherta.png)  50% 45px/9% no-repeat local;;
 	color: #263244;
+
 }
 
 .title_info img{
-	margin: 100px 0px 0px 0px;	
+	margin: 100px 0px 0px 0px;
 
 }
+
 .title_info>p {
 	padding: 28px 0px 0px 0px;
 	text-align: center;
 	color: #3f495a;
 	font-size: 16px;
-	
+
 }
+
 .title_info input {
 	text-align: center;
 	height: 40px;
@@ -113,20 +264,34 @@ nav{
 	background: none;
 	border-radius: 5px;
 	font-size: 16px;
-	padding: 0px 16px 0px 32px; 
+	padding: 0px 16px 0px 32px;
 	background: url(../img/dowload.png) 8px/auto 50% no-repeat;
-} 
+
+}
+.title_info input {
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+.title_info input:hover {
+	background: #344051;
+	color: white;
+
+}
+.title_info input:active {
+	transform: scale(1.1);
+}
 
 .info_job {
 	width: 100%;
 	height: 520px;
 	text-align: center;
 	background: url(../img/info_job_bg.jpg) center/cover no-repeat;
-	position: relative;
-}
-.title_job h2{
 
-	margin-top: 100px; 
+}
+
+.title_job h2{
+	margin-top: 100px;
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
@@ -134,64 +299,75 @@ nav{
 	color: #263244;
 
 }
-.title_job h3{
 
-	margin: 35px 0px 16px 0px; 
+.title_job h3{
+	margin: 35px 0px 16px 0px;
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
 	color: #cf7600;
 
-
 }
-.title_job p{
 
+.title_job img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.title_job img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.title_job p{
 	text-align: center;
 	color: #3f495a;
 	font-size: 16px;
-	
 
 }
+
 .diz{
 	display: inline-block;
 	margin: 120px 84px;
 	color: #2c384a;
 
-	
-
 }
+
 .razr{
 	display: inline-block;
 	margin: 100px 84px;
 	color: #2c384a;
-	
+	color:;
 
 }
+
 .optim{
 	display: inline-block;
 	margin: 100px 84px;
 	color: #2c384a;
-	
 
 }
+
 .market{
 	display: inline-block;
 	margin: 100px 84px;
 	color: #2c384a;
-	
+
 }
+
 .case {
 	width: 100%;
 	height: 1215px;
-	position: relative;
+
 }
+
 .title_case{
 	text-align: center;
 	color: #2c384a;
-	
+
 }
+
 .title_case h2{
-	margin-top: 108px; 
+	margin-top: 108px;
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
@@ -199,16 +375,20 @@ nav{
 	color: #263244;
 
 }
+
 .title_case>span {
 	display: inline-block;
 	margin: 72px 0px 0px 0px;
 	text-align: center;
 	color: #3f495a;
 	font-size: 16px;
+
 }
+
 .title_case img{
 	display: inline-block;
 	margin: 100px 0px 0px 0px;
+
 }
 
 .case_comp{
@@ -217,91 +397,113 @@ nav{
 	margin: 100px 84px;
 	color: #2c384a;
 
+
 }
 .case_otz{
 	display: inline-block;
 	text-align: left;
 	margin: 0px 0px;
 	color: #2c384a;
-		
+
 }
+
 .title_case h3{
-	
 	font-size: 24px;
 	font-weight: bold;
 	color: #384354;
+
 }
+
 .title_case p {
 	color: #3f495a;
 	font-size: 16px;
-	
+
 }
 
 .price {
 	width: 100%;
 	height: 788px;
-	position: relative;
-	
+
 }
 .title_price{
-
 	color: #2c384a;
 	text-align: center;
 }
+
 table{
-	
 	margin: auto;
 	padding: 25px;
+
 }
 
 .title_price h2{
 	font-size: 48px;
 	font-weight: bold;
 	color: #1c2534;
-}
 
+}
 
 .title_price h3{
 	text-align: left;
 	font-size: 36px;
 	font-weight: bold;
 	color: #1c2534;
+
 }
+
 .title_price p{
 	text-align: left;
 	margin-left: 20px;
 	font-size: 16px;
 	color: #737373;
+
 }
+
 .title_price h5{
 	text-align: left;
 	font-size: 24px;
 	font-weight: bold;
 	color: #1c2534;
+
 }
+
 .title_price h4{
 	text-align: right;
 	font-size: 36px;
 	font-weight: bold;
 	color: #1c2534;
+
 }
+
 .title_price select{
-	
+	height: 25px;
 	text-align: left;
-	color: #2c2c2c;
+	color: #6d7682;
+	border: 1px solid #6d7682;
 	background: none;
-	font-size: 36px;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 3px 10px;
+
 }
+
 .statistics {
 	width: 100%;
 	height: 500px;
 	text-align: center;
 	background: url(../img/bg_statist.jpg) center 100%/auto  no-repeat;
-	position: relative;
-}
-.title_statistics h2{
+	background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 60px;
+    align-items: center;
+    position: relative;
 
-	margin-top: 108px; 
+}
+
+.title_statistics h2{
+	margin-top: 108px;
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
@@ -309,14 +511,13 @@ table{
 	color: #263244;
 
 }
-.title_statistics h3{
 
-	margin: 35px 0px 35px 0px; 
+.title_statistics h3{
+	margin: 35px 0px 35px 0px;
 	text-align: center;
 	font-size: 36px;
 	font-weight: 900;
 	color: #323e4f;
-
 
 }
 
@@ -325,68 +526,79 @@ table{
 	font-size: 18px;
 	font-weight: bold;
 	color: #323e4f;
+
 }
 
+.title_statistics img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+.title_statistics img:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 
 .stat1{
 	display: inline-block;
 	margin: 100px 84px;
 	color: #2c384a;
 
-	
-
 }
+
 .stat2{
 	display: inline-block;
 	margin: 100px 84px;
 	color: #2c384a;
-	
 
 }
+
 .stat3{
 	display: inline-block;
 	margin: 100px 84px;
 	color: #2c384a;
-	
 
 }
+
 .stat4{
 	display: inline-block;
 	margin: 100px 84px;
 	color: #2c384a;
+
 }
 
 .feedback {
 	width: 100%;
 	height: 589px;
 	text-align: center;
-	position: relative;
+
 }
+
 .title_feedback{
 	margin-top: 140px;
-}
-.title_feedback h2{
 
-	margin-top: 108px; 
+}
+
+.title_feedback h2{
+	margin-top: 108px;
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
 	background: url(../img/cherta.png)  50% 45px/7% no-repeat local;;
 	color: #263244;
+
 }
 .title_feedback img{
-
 	text-align: center;
 	margin-top: 50px;
-	
+
 }
 
 .title_feedback p{
-
 	text-align: center;
 	margin-top: 30px;
 	font-size: 16px;
 	color: #3d4654;
+
 }
 
 .title_feedback input {
@@ -398,38 +610,39 @@ table{
 	background: none;
 	border-radius: 5px;
 	font-size: 18px;
-	padding: 0px 16px; 
-} 
+	padding: 0px 16px;
+
+}
 
 .contacts {
 	width: 100%;
 	height: 808px;
 	background: url(../img/bg_contacts.jpg) center 100%/auto  no-repeat;
-	position: relative;
-}
-.title_contacts{
 
+
+}
+
+.title_contacts{
 	float: center;
 	margin: 10px 0px 0px 0px;
 	color: #fff;
 	text-align: center;
-}
-.title_contacts h2{
 
-	
+}
+
+.title_contacts h2{
 	text-align: center;
 	font-size: 48px;
 	font-weight: bold;
 	background: url(../img/cherta.png)  50% 45px/10% no-repeat local;;
 
 }
-.title_contacts h3{
 
-	margin: 21px 0px; 
+.title_contacts h3{
+	margin: 21px 0px;
 	text-align: center;
 	font-size: 24px;
 	font-weight: bold;
-
 
 }
 
@@ -444,25 +657,22 @@ table{
 	display: inline-block;
 	margin: 30px 30px;
 
-	
-
-	
-
 }
+
 .E-mail{
 	display: inline-block;
 	margin: 30px 30px;
 	margin: 0px auto
-	
 
 }
+
 .tel{
 	display: inline-block;
 	margin: 30px 30px;
-	
-}
-.title_contacts input {
 
+}
+
+.title_contacts input {
 	margin:0px 14px 0px 14px;
 	height: 40px;
 	text-align: left;
@@ -474,8 +684,8 @@ table{
 	padding: 5px 5px;
 
 }
-.title_contacts textarea {
 
+.title_contacts textarea {
 	margin:23px 25px 25px 25px;
 	text-align: left;
 	color: #676769;
@@ -499,51 +709,95 @@ table{
 	padding: 5px 20px;
 
 }
+.title_contacts textarea {
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+.title_contacts textarea:hover {
+	transform: scale(1.05)
+
+}
+
+.title_contacts input.blanc {
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+.title_contacts input.blanc:hover {
+	transform: scale(1.05)
+
+}
+
+.title_contacts input.submit {
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+.title_contacts input.submit:hover {
+	background: green;
+	color: white;
+
+}
+.title_contacts input.submit:active {
+	transform: scale(1.2);
+}
+
 .facebook{
 	display: inline-block;
 	margin: 102px 25px;
 	text-align: center;
-
-	
+	opacity:0;
 
 }
+
 .Twitter{
 	display: inline-block;
 	margin: 102px 25px;
 	text-align: center;
-	
+	opacity:0;
 
 }
+
 .dribbble{
 	display: inline-block;
 	margin: 102px 25px;
 	text-align: center;
-	
+	opacity:0;
 
 }
+
 .github{
 	display: inline-block;
 	margin: 102px 25px;
 	text-align: center;
+	opacity:0;
+
 }
+
 .instagram{
 	display: inline-block;
 	margin: 102px 25px;
 	text-align: center;
-
+	opacity:0;
 
 }
+
 .linkedin{
 	display: inline-block;
 	margin: 102px 25px;
 	text-align: center;
-	
+	opacity:0;
+
 }
+
 .cart {
 	width: 100%;
 	height: 335px;
-	position: relative;
+
+
 }
+
 .title_cart{
 	width: 100%;
 	float: center;
@@ -552,6 +806,7 @@ table{
 	text-align: center;
 
 }
+
 .creator{
 	width: 100%;
 	color: #fff;
@@ -559,14 +814,15 @@ table{
 	font-size: 13px;
 	height: 95px;
 	float: center;
-	position: relative;
 	background: #354051 local no-repeat;
-}
-.creator h4{
-	display: inline-block;
-	margin-top: 45px; 
+
 }
 
+.creator h4{
+	display: inline-block;
+	margin-top: 45px;
+
+}
 
 
 
