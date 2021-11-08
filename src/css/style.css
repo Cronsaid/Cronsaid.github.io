@@ -161,7 +161,7 @@ nav{
 	-webkit-animation-delay: 2.4s;
 	-o-animation-delay: 2.4s;
 	animation-delay: 2.4s;
-	
+
 }
 
 @keyframes slide{
@@ -479,11 +479,19 @@ table{
 	height: 25px;
 	text-align: left;
 	color: #6d7682;
-	border: 1px solid #6d7682;
+	border: 2px solid #6d7682;
 	background: none;
 	border-radius: 5px;
+	font-size: 14px;
+	padding: 0px 20px;
+
+}
+.title_price select:hover{
+	transform: scale(1.5);
+	border: 2px solid #6d7682;
 	font-size: 18px;
-	padding: 3px 10px;
+
+
 
 }
 
