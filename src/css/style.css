@@ -432,6 +432,7 @@ nav{
 
 table{
 	margin: auto;
+	text-align: left;
 	padding: 25px;
 
 }
@@ -487,7 +488,7 @@ table{
 
 }
 .title_price select:hover{
-	transform: scale(1.5);
+	transform: scale(1.2);
 	border: 2px solid #6d7682;
 	font-size: 18px;
 
