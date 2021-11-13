@@ -469,7 +469,7 @@ table{
 }
 
 .title_price h4{
-	text-align: right;
+	text-align: left;
 	font-size: 36px;
 	font-weight: bold;
 	color: #1c2534;
@@ -477,23 +477,21 @@ table{
 }
 
 .title_price select{
-	height: 30px;
-	width: 60%;
+	height: 60px;
+	width: 103%;
 	text-align: left;
-	color: #6d7682;
-	border: 2px solid #6d7682;
-	background: none;
-	border-radius: 5px;
-	font-size: 14px;
-	padding: 0px 20px;
+	color: #7d7d7d;
+	border: 0px solid #6d7682;
+	background-color: #eeeeee;
+	border-radius: 1px;
+	font-size: 16px;
+	padding: 10px 50px 10px 50px;
 
 }
 .title_price select:hover{
 	transform: scale(1.2);
 	border: 2px solid #6d7682;
 	font-size: 18px;
-
-
 
 }
 
