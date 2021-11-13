@@ -477,7 +477,8 @@ table{
 }
 
 .title_price select{
-	height: 25px;
+	height: 30px;
+	width: 60%;
 	text-align: left;
 	color: #6d7682;
 	border: 2px solid #6d7682;
