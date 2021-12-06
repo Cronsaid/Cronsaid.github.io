@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'FranklinGot';
+	src: url('../fonts/framd.eot');
+	src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf')
+	format('truetype'), url('../fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 
 body{
 	font-family: Arial, sans-serif;
@@ -46,6 +56,7 @@ nav{
 	height: 60px;
 	background: #344051;
 	position: fixed;
+	z-index: 10;
 
 }
 
@@ -53,11 +64,11 @@ nav{
 	color: #fff;
 	font-size: 28px;
 	line-height: 60px;
-	padding-left: 388px;
 	float: left;
 	-webkit-animation: comming 1s ease;
 	-o-animation: comming 1s ease;
 	animation: comming 1s ease;
+	font-family: 'FranklinGot', sans-serif;
 
 
 }
@@ -65,7 +76,6 @@ nav{
 .menu{
 	height: 60px;
 	float: left;
-	padding-left: 432px;
 
 
 }
@@ -75,7 +85,7 @@ nav{
 	line-height: 60px;
 	color: #fff;
 	margin-right: 40px;
-	font-size: 16px;
+	font-size: 14px;
 	text-transform: uppercase;
 	-webkit-animation: topshift 1s ease forwards;
 	-o-animation: topshift 1s ease forwards;
@@ -88,6 +98,7 @@ nav{
 	color: white;
 	transform: scale(1);
 	display: inline-block;
+	text-decoration: none;
 
 }
 
@@ -142,18 +153,20 @@ nav{
 	animation-delay: 2s;
 }
 
+.white-btn:visited{
+	color: white;
+}
 .main {
 	width: 100%;
 	height: 1015px;
 	background: url(../img/boy.png) 90% 100%/auto 85% no-repeat , url(../img/bg.jpg) center/cover no-repeat;
 
 }
-
 .title__container{
 	float: left;
-	margin: 432px 0px 0px 404px;
 	color: #2c384a;
 	text-align: center;
+	width: 100%;
 	opacity: 0;
 	-webkit-animation: slide 1s ease forwards;
 	-o-animation: slide 1s ease forwards;
@@ -171,15 +184,17 @@ nav{
 	}
 	to{
 		opacity: 1;
-		margin-left: 404px;
+		margin-left: 0px;
 	}
 }
 
 .title__container h1 {
-	font-size: 60px;
-	font-weight: bold;
+	font-size: 72px;
+	font-family: Arial, sans-serif;
+	font-weight: 600;
 
 }
+
 .title__container h4 {
 	margin-top:40px;
 	font-size: 20px;
@@ -217,7 +232,7 @@ nav{
 
 .info {
 	width: 100%;
-	height: 732px;
+	height: 720px;
 	text-align: center;
 	background: url(../img/bg_info.jpg) center/cover no-repeat;
 
@@ -233,22 +248,22 @@ nav{
 
 
 .title_info h2 {
-	margin-top: 108px;
+	margin-top: 25px;
 	text-align: center;
-	font-size: 48px;
+	font-size: 26px;
 	font-weight: bold;
-	background: url(../img/cherta.png)  50% 45px/9% no-repeat local;;
+	background: url(../img/cherta.png)  50% 30px/8% no-repeat local;
 	color: #263244;
 
 }
 
 .title_info img{
-	margin: 100px 0px 0px 0px;
+	margin: 80px 0px 0px 0px;
 
 }
 
 .title_info>p {
-	padding: 28px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 	text-align: center;
 	color: #3f495a;
 	font-size: 16px;
@@ -291,19 +306,19 @@ nav{
 }
 
 .title_job h2{
-	margin-top: 100px;
+	margin-top: 25px;
 	text-align: center;
-	font-size: 48px;
+	font-size: 26px;
 	font-weight: bold;
-	background: url(../img/cherta.png)  50% 45px/12% no-repeat local;
+	background: url(../img/cherta.png)  50% 30px/8% no-repeat local;;
 	color: #263244;
 
 }
 
 .title_job h3{
-	margin: 35px 0px 16px 0px;
+	margin: 35px 0px 0px 0px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 16px;
 	font-weight: bold;
 	color: #cf7600;
 
@@ -327,36 +342,36 @@ nav{
 
 .diz{
 	display: inline-block;
-	margin: 120px 84px;
+	margin-top: 100px;
 	color: #2c384a;
 
 }
 
 .razr{
 	display: inline-block;
-	margin: 100px 84px;
+	margin-top: 100px;
 	color: #2c384a;
-	color:;
+
 
 }
 
 .optim{
 	display: inline-block;
-	margin: 100px 84px;
+	margin-top: 100px;
 	color: #2c384a;
 
 }
 
 .market{
 	display: inline-block;
-	margin: 100px 84px;
+	margin-top: 100px;
 	color: #2c384a;
 
 }
 
 .case {
 	width: 100%;
-	height: 1215px;
+	height: 1100px;
 
 }
 
@@ -367,48 +382,47 @@ nav{
 }
 
 .title_case h2{
-	margin-top: 108px;
+	margin-top: 25px;
 	text-align: center;
-	font-size: 48px;
+	font-size: 26px;
 	font-weight: bold;
-	background: url(../img/cherta.png)  50% 45px/7% no-repeat local;
+	background: url(../img/cherta.png)  50% 30px/8% no-repeat local;
 	color: #263244;
 
 }
 
 .title_case>span {
 	display: inline-block;
-	margin: 72px 0px 0px 0px;
+	margin-top: 72px;
 	text-align: center;
 	color: #3f495a;
 	font-size: 16px;
 
 }
 
-.title_case img{
+.carousel{
 	display: inline-block;
-	margin: 100px 0px 0px 0px;
-
+	margin-top: 30px;
 }
 
 .case_comp{
 	display: inline-block;
 	text-align: left;
-	margin: 100px 84px;
+	margin-top: 45px;
 	color: #2c384a;
 
 
 }
 .case_otz{
 	display: inline-block;
+	margin-top: 45px;
 	text-align: left;
-	margin: 0px 0px;
 	color: #2c384a;
 
 }
 
 .title_case h3{
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: bold;
 	color: #384354;
 
@@ -422,7 +436,7 @@ nav{
 
 .price {
 	width: 100%;
-	height: 788px;
+	height: 752px;
 
 }
 .title_price{
@@ -431,22 +445,24 @@ nav{
 }
 
 table{
-	margin: auto;
+	width: 100%;
 	text-align: left;
-	padding: 25px;
+	padding: 0px;
 
 }
 
 .title_price h2{
-	font-size: 48px;
+	margin-top: 25px;
+	font-size: 26px;
 	font-weight: bold;
 	color: #1c2534;
+	background: url(../img/cherta.png)  50% 30px/19% no-repeat local;
 
 }
 
 .title_price h3{
 	text-align: left;
-	font-size: 36px;
+	font-size: 28px;
 	font-weight: bold;
 	color: #1c2534;
 
@@ -454,7 +470,6 @@ table{
 
 .title_price p{
 	text-align: left;
-	margin-left: 20px;
 	font-size: 16px;
 	color: #737373;
 
@@ -462,7 +477,7 @@ table{
 
 .title_price h5{
 	text-align: left;
-	font-size: 24px;
+	font-size: 21px;
 	font-weight: bold;
 	color: #1c2534;
 
@@ -470,7 +485,7 @@ table{
 
 .title_price h4{
 	text-align: left;
-	font-size: 36px;
+	font-size: 26px;
 	font-weight: bold;
 	color: #1c2534;
 
@@ -478,7 +493,7 @@ table{
 
 .title_price select{
 	height: 60px;
-	width: 103%;
+	width: 100%;
 	text-align: left;
 	color: #7d7d7d;
 	border: 0px solid #6d7682;
@@ -494,44 +509,69 @@ table{
 	font-size: 18px;
 
 }
+.title_price input {
+	text-align: center;
+	height: 48px;
+	color: white;
+	border: 2px solid #00b6af;
+	background: #00b6af;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 0px 16px;
+
+}
+
+.title_price input {
+	transition: all 0.2s;
+	transform: scale(1);
+
+}
+.title_price input:hover {
+	background: #344051;
+	color: #00b6af;
+
+}
+.title_price input:active {
+	transform: scale(1.1);
+
+}
 
 .statistics {
 	width: 100%;
 	height: 500px;
 	text-align: center;
-	background: url(../img/bg_statist.jpg) center 100%/auto  no-repeat;
+	background: url(../img/bg_statist.jpg) center/cover no-repeat;
 	background-attachment: fixed;
-    display: flex;
     justify-content: center;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 30px;
     align-items: center;
     position: relative;
 
 }
 
 .title_statistics h2{
-	margin-top: 108px;
+	margin-top: 25px;
 	text-align: center;
-	font-size: 48px;
+	font-size: 26px;
 	font-weight: bold;
-	background: url(../img/cherta.png)  50% 45px/19% no-repeat local;;
+	background: url(../img/cherta.png)  50% 30px/15% no-repeat local;
 	color: #263244;
 
 }
 
 .title_statistics h3{
-	margin: 35px 0px 35px 0px;
+	margin-top: 30px;
 	text-align: center;
-	font-size: 36px;
-	font-weight: 900;
+	font-size: 32px;
+	font-weight: 800;
 	color: #323e4f;
 
 }
 
 .title_statistics h4{
-	text-align: right;
-	font-size: 18px;
+	text-align: center;
+	font-size: 16px;
 	font-weight: bold;
 	color: #323e4f;
 
@@ -548,50 +588,49 @@ table{
 
 .stat1{
 	display: inline-block;
-	margin: 100px 84px;
+	margin-top: 120px;
 	color: #2c384a;
 
 }
 
 .stat2{
 	display: inline-block;
-	margin: 100px 84px;
+	margin-top: 120px;
 	color: #2c384a;
 
 }
 
 .stat3{
 	display: inline-block;
-	margin: 100px 84px;
+	margin-top: 120px;
 	color: #2c384a;
 
 }
 
 .stat4{
 	display: inline-block;
-	margin: 100px 84px;
+	margin-top: 120px;
 	color: #2c384a;
 
 }
 
 .feedback {
 	width: 100%;
-	height: 589px;
+	height: 600px;
 	text-align: center;
 
 }
 
 .title_feedback{
-	margin-top: 140px;
-
+	width: 100%;
 }
 
 .title_feedback h2{
-	margin-top: 108px;
+	margin-top: 25px;
 	text-align: center;
-	font-size: 48px;
+	font-size: 26px;
 	font-weight: bold;
-	background: url(../img/cherta.png)  50% 45px/7% no-repeat local;;
+	background: url(../img/cherta.png)  50% 30px/8% no-repeat local;
 	color: #263244;
 
 }
@@ -632,7 +671,7 @@ table{
 
 .title_contacts{
 	float: center;
-	margin: 10px 0px 0px 0px;
+	margin-top: 25px;
 	color: #fff;
 	text-align: center;
 
@@ -640,16 +679,16 @@ table{
 
 .title_contacts h2{
 	text-align: center;
-	font-size: 48px;
+	font-size: 26px;
 	font-weight: bold;
-	background: url(../img/cherta.png)  50% 45px/10% no-repeat local;;
+	background: url(../img/cherta.png)  50% 30px/8% no-repeat local;
 
 }
 
 .title_contacts h3{
 	margin: 21px 0px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: bold;
 
 }
@@ -657,19 +696,19 @@ table{
 .title_contacts p{
  	margin: 0px auto;
 	text-align: center;
-	margin-top: 24px;
+	margin-top: 14px;
 
 }
 
 .adress{
 	display: inline-block;
-	margin: 30px 30px;
+	margin: 15px 15px;
 
 }
 
 .E-mail{
 	display: inline-block;
-	margin: 30px 30px;
+	margin: 15px 15px;
 	margin: 0px auto
 
 }
@@ -688,19 +727,18 @@ table{
 	border: 2px solid #676769;
 	background: #fff;
 	border-radius: 5px;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 5px 5px;
 
 }
 
 .title_contacts textarea {
-	margin:23px 25px 25px 25px;
-	text-align: left;
+	margin-top: 25px;
 	color: #676769;
 	border: 2px solid #676769;
 	background: #fff;
 	border-radius: 5px;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 5px 5px;
 
 }
@@ -713,7 +751,7 @@ table{
 	border: 2px solid #fff;
 	background: none;
 	border-radius: 5px;
-	font-size: 20px;
+	font-size: 18px;
 	padding: 5px 20px;
 
 }
@@ -753,49 +791,55 @@ table{
 
 .facebook{
 	display: inline-block;
-	margin: 102px 25px;
-	text-align: center;
-	opacity:0;
+	margin: 65px 25px;
+	text-align: left;
+	opacity:1;
+	background: red;
 
 }
 
 .Twitter{
 	display: inline-block;
-	margin: 102px 25px;
-	text-align: center;
-	opacity:0;
+	margin: 65px 25px;
+	text-align: left;
+	opacity:1;
+	background: red;
 
 }
 
 .dribbble{
 	display: inline-block;
-	margin: 102px 25px;
-	text-align: center;
-	opacity:0;
+	margin: 65px 25px;
+	text-align: left;
+	opacity:1;
+	background: red;
 
 }
 
 .github{
 	display: inline-block;
-	margin: 102px 25px;
-	text-align: center;
-	opacity:0;
+	margin: 65px 25px;
+	text-align: left;
+	opacity:1;
+	background: red;
 
 }
 
 .instagram{
 	display: inline-block;
-	margin: 102px 25px;
-	text-align: center;
-	opacity:0;
+	margin: 65px 25px;
+	text-align: left;
+	opacity:1;
+	background: red;
 
 }
 
 .linkedin{
 	display: inline-block;
-	margin: 102px 25px;
-	text-align: center;
-	opacity:0;
+	margin: 65px 25px;
+	text-align: left;
+	opacity:1;
+	background: red;
 
 }
 
@@ -807,7 +851,6 @@ table{
 }
 
 .title_cart{
-	width: 100%;
 	float: center;
 	margin: 10px 0px 0px 0px;
 	color: #fff;
@@ -816,6 +859,7 @@ table{
 }
 
 .creator{
+	margin-top: 45px
 	width: 100%;
 	color: #fff;
 	text-align: center;
@@ -831,14 +875,117 @@ table{
 	margin-top: 45px;
 
 }
+@media(max-width: 1200px){
+	.title__container, .title__container h4, .title__container input{
+		color: white;
+		position: relative;
+		z-index: 2;
+	}
+	.title__container input{
+		border: 2px solid white;
+	}
+	.main{
+		position: relative;
+	}
+	.main::after{
+		content: "";
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+		background: rgba(0,0,0,0.3);
+		z-index: 1;
+	}
+	.info_job{
+		height: 800px;
+	}
+	.title_case img{}
+}
+@media(min-width: 2015px){
+	.cart {
+		height: 400px;
 
+	}
+}
+@media(max-width: 1199px){
+	.statistics{
+		height: 650px;
+	}
+	.cart{
+		height: 250px;
+	}
+}
+@media(max-width: 995px){
+	.info{
+		height: 800px;
+	}
+	.cart{
+		height: 200px;
+	}
+}
 
+@media(max-width: 840px){
+	.info_job{
+		height: 850px;
+		margin-top: 0px;
+	}
+	.cart{
+		height: 150px;
+	}
+}
 
+@media(max-width: 770px){
+	.info{
+		height: 815px;
+	}
+	.info_job{
+		height: 1200px;
+		margin-top: 0px;
+	}
+	.feedback{
+		height: 550px;
+	}
+}
+@media(max-width: 660px){
+	.social{
+		margin-top: -40px;
+	}
+}
+@media(max-width: 634px){
+	.social{
+		margin-top: -62px;
+	}
+}
+@media(max-width: 575px){
+	.statistics{
+		height: 1200px;
+	}
+}
+@media(max-width: 506px){
+	.contacts{
+		height: 950px;
+	}
+	.social{
+		margin-top: -25px;
+	}
+	.cart{
+		height: 100px;
+	}
+}
+@media(max-width: 468px){
+	.social{
+		margin: -25px -25px;
+	}
+}
 
-
-
-
-
-
-
-
+@media(max-width: 425px){
+	.info{
+		height: 870px;
+	}
+}
+@media(max-width: 418px){
+	.social{
+		margin: -25px -50px;
+	}
+}
